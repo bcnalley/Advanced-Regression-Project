@@ -1,0 +1,37 @@
+---
+title: "STAT 6100 Final Project"
+author: "Brian Nalley"
+date: "4/26/2022"
+output:
+  pdf_document: default
+  html_document: default
+header-includes:
+- \usepackage{amsmath}
+- \usepackage{hyperref}
+- \usepackage{url}
+- \usepackage{float}
+- \usepackage{graphicx}
+- \usepackage{multicol}
+- \newcommand*{\nspace}{\vspace{0.3cm}}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+\begin{multicols}{2}
+
+# Introduction
+
+This project began with the simple plan of working on an interesting problem/data set.  To that end I explored the UC Irvine machine learning database and Kaggle in search of a suitable data set.  I eventually found a data set on Kaggle which used many factors, to be discussed in more detail below, with the goal of predicting attendance at select college football games between 2000 and 2018.  As someone who has been fascinated with sports analytics since childhood, this certainly fit the bill of an interesting problem.  
+With a data set found, I next endeavored to see if previous research had been done with similar sports information, surprisingly little was found.  The closest I could find were two factor analyses based on interviews with spectators (references), another which used an ordinary least squares model (reference) and a third (reference) which used models similar to what I will propose to classify whether an individual season ticket holder would attend a match.  
+Rysnik (2019) asked attendees at the 2014 FIVB Volleyball Men's World Championship to fill out a questionnaire to identify individual motives and barriers to sporting event attendance.  His factor analysis found that the most important barriers to attendance were the cost of traveling to matches, a lack of free time and buying tickets for the matches.  While the largest motivating factors were a desire to watch a match in person, that the matches in question were the European Championships, the possibility of a closely-contested match, a desire for relaxation and entertainment, being able to watch star players in person and an opportunity to go to the match with family.  
+A similar study was conducted by Hall, O'Mahony and Vieceli (2009) who conducted telephone interviews with randomly selected individuals to determine the factors which had led to their attending any sporting event in the past year.  Their most important factors were related to the emotions that that the event stirred in the individual and the quality of the facilities at the event.
+
+
+# Methods
+
+
+# Results
+
+
+# Discussion
