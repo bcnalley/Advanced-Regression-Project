@@ -1,2 +1,7 @@
 # Advanced-Regression-Project
 Final Project for STAT 6100 Advanced Regression Course
+
+The goal of this project was to predict attendance rate at selected college football games between 2005 and 2018.  The original data was downloaded from:  https://www.kaggle.com/datasets/jeffgallini/college-football-attendance-2000-to-2018.  It includes 6,672 games with 63 different home teams.  There were 25 original variables:  Date, Team, Time, Opponent, Rank, Site, TV, Result, Attendance, Current Wins, Current Losses, Stadium Capacity, Fill Rate, New Coach, Tailgating, PRCP, Snow, SNWD, TMAX, TMIN, Opponent Rank, Conference, Year, Month, Day which I transformed to 13 final variables:  Time (factor w/5 levels), Rank, Rivalry (Y/N), TV (Y/N), Fill Rate (Response), New Coach, Tailgating, PRCP (Y/N), Snow (Y/N), TMAX, Opponent Rank, Conference (factor w/14 levels), and Win Pct.  I also capped the fill rate at 1 as there were some events which had a fill rate of greater than 1.  Lastly, I split the data into 70/30 training/test sets.
+
+I used Ordinary Least Squares (OLS), elastic net, regression tree, random forest, gradient boosting machine (GBM) and support vector machine (SVM) models to predict the attendance rate for each game.  The best performing models were the GBM and SVM which both had a test set MSE of ~0.02.  Full results for each method can be found in the MSE Table file, in the data-raw folder. 
+
